@@ -1,0 +1,22 @@
+{
+  "name": "consumindodolarapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.3",
+    "node-sass": "^7.0.0"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url public/stylesheets/sass/mystyles.scss public/stylesheets/css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Aenã Martinelli",
+  "license": "ISC"
+}

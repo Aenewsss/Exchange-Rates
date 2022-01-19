@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import "../../../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+html{
+    background-color: #E1DDDA;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url('../../media/images/1.jpg');
+}
+
+table{
+    width: 100%;
+    height: 100%vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table.table{
+    background-color: transparent;
+}
+
+table.table td{
+    border-color: transparent;
+}
+
+h1.title.is-1{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: Iceland;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+select{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input{
+font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.all{
+    height: 10em;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #00ff1e, 0 0 20px #00ff1e, 0 0 30px #fff, 0 0 40px #00ff1e,
+        0 0 70px #00ff1e, 0 0 80px #00ff1e, 0 0 100px #00ff1e, 0 0 150px #00ff1e;
+    }
+    to {
+      text-shadow: 0 0 5px #00ff1e, 0 0 10px #00ff1e, 0 0 15px #00ff1e, 0 0 20px #00ff1e,
+        0 0 35px #00ff1e, 0 0 40px #00ff1e, 0 0 50px #00ff1e, 0 0 75px #00ff1e;
+    }
+  }
