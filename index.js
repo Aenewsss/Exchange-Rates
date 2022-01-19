@@ -13,6 +13,6 @@ app.get("/", (req, res)=> {
     res.render("index")
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Server is at http://localhost:${port}`)
 })
