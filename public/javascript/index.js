@@ -55,7 +55,7 @@ function sortFunction(namesSorted, names, arrayNames, arrayRates, rates, pairSor
                 for(let k=0;k<168;k++){                         //percorre o array de pares/cotações.
                 if(arrayNames[j]==arrayRates[k]){               //Se os pares forem iguais,
                         pairSorted.push(arrayNames[j]);         //organizamos,em ordem de 
-                        priceSorted.push(rates[arrayRates[k]].toFixed(2)); //acordo com os nomes, os pares e as cotações.
+                        priceSorted.push(rates[arrayRates[k]]); //acordo com os nomes, os pares e as cotações.
                     }
                 }
             }
