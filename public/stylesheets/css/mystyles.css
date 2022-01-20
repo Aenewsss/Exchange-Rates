@@ -7849,11 +7849,24 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem; }
 
 html {
+  background-color: transparent; }
+
+body {
   background-color: #E1DDDA;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-image: url("../../media/images/1.jpg"); }
+
+.all {
+  height: 10em;
+  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); }
 
 table {
   width: 100%;
@@ -7882,20 +7895,36 @@ select {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 input {
+  min-width: 200px;
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-.all {
-  height: 10em;
-  position: relative;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%); }
+footer {
+  text-align: center;
+  margin-top: 40%;
+  color: #003b6b; }
+  footer button {
+    color: #003b6b;
+    font-size: 16px; }
 
 @keyframes neon2 {
   from {
     text-shadow: 0 0 10px #00ff1e, 0 0 20px #00ff1e, 0 0 30px #fff, 0 0 40px #00ff1e, 0 0 70px #00ff1e, 0 0 80px #00ff1e, 0 0 100px #00ff1e, 0 0 150px #00ff1e; }
   to {
     text-shadow: 0 0 5px #00ff1e, 0 0 10px #00ff1e, 0 0 15px #00ff1e, 0 0 20px #00ff1e, 0 0 35px #00ff1e, 0 0 40px #00ff1e, 0 0 50px #00ff1e, 0 0 75px #00ff1e; } }
+
+@media only screen and (max-width: 600px) {
+  .all {
+    top: 35%; }
+  footer {
+    font-size: 12px;
+    margin-top: 20%; }
+  #margint {
+    margin-top: 10px; }
+  i {
+    font-size: 24px;
+    margin-top: 1px;
+    color: lime; }
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/stylesheets/css/mystyles.css">
     <title>Cotações</title>
     <link rel="icon" href="/media/icons/dolar.png">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
 <body>  
@@ -16,29 +15,32 @@
             <h1 class="title is-1">Conversor de moedas</h1> 
         </div>
         
-        <table class="table">
-            <tr id="tr-1">
-                <td id="cel-1">
+        <table class="table" id="table">
+            <tr>
+                <td>
                     <div class="select is-warning is-rounded">
                         <select></select>
-                        <span id="icon"></span>
+                        <i class='fas fa-arrow-down'></i>
                     </div>
                 </td>
-                
-                <td id="cel-2">
-                    <div class="control">
+            </tr>
+            <tr>
+                <td>
+                    <div class="select is-warning is-rounded">
+                        <select id="margint"></select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="margint" class="control">
                         <input class="input is-warning is-rounded is-focused " type="number">
                     </div>
                 </td>
             </tr>
-            <tr id="tr-2">
-                <td id="cel-3">
-                    <div class="select is-warning is-rounded">
-                        <select></select>
-                    </div>
-                </td>
-                <td id="cel-4">
-                    <input class="input is-warning is-rounded" type="text" readonly></input>
+            <tr>
+                <td>
+                    <input class="input is-warning is-rounded" type="text" readonly value="Insira uma moeda  ⇑"></input>
                 </td>
             </tr>
         </table>
