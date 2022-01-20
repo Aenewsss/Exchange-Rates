@@ -16,7 +16,3 @@ app.get("/", (req, res)=> {
 app.listen(process.env.PORT || port, () => {
     console.log(`Server is at http://localhost:${port}`)
 })
-
-app.get("/mobile", (req, res) => {
-    res.render("mobile")
-})
